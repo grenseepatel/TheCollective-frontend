@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap file -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- bootstap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* .empty-bag-para{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 30%;
+            left: 50%;
+            color: black;
+        }
+        .empty-bag-para i{
+            font-size: 40px;
+            padding: 250px 0px;
+        }
+        .morebtn{
+            height: 40px;
+            width: 60%;
+            display: flex;
+            margin-top: 20%;
+            margin-left: 40%;
+        }
+        .morebtn button{
+            justify-content: center;
+        } */
+
+        .page {
+            background-color: black;
+            color: #fff;
+            height: 50px;
+            text-align: center;
+            padding-top: 8px;
+        }
+
+        .card {
+            border: 1px solid gray;
+            height: 400px;
+            width: 400px;
+            margin-left: 35%;
+            margin-top: 2%;
+            text-align: center;
+            img {
+                padding-top: 2px;
+                height: 200px;
+                width: 200px;
+                
+            }
+        }
+
+        .card-name {
+            font-size: 15px;
+            color: black;
+        }
+
+        .card-brand {
+            color: black;
+        }
+
+        .card-price {
+            color: black;
+        }
+        .card-button{
+            padding: 10px 30px;
+        } 
+    </style>
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="col-12  d-flex justify-content-center" style="color: #fff; background-color: lightgrey; height: 50px;">
+        <img src="https://imagescdn.thecollective.in/img/app/brands/tc/TC-Logo_D_0909.png?w=300" alt="">
+    </div>
+
+    <div class="page">
+        <h3>CART PAGE</h3>
+    </div>
+
+    <!-- <div class="link">
+        <div class="empty-bag-para text-center bg-light">
+            <i class="bi bi-handbag-fill"></i>
+            <h3 class="pt-3">Your bag is empty</h3>
+            <p>Fill it up with latest trends and great deals nowl</p>
+    
+        </div>
+        <div class="morebtn">
+            <a href="login.html"><button class="btn btn-light">Login/SignUp</button></a>&nbsp;&nbsp;&nbsp;
+            <a href="index.html"><button class="btn btn-dark">Stop Shoping</button></a>
+        </div>
+    </div> -->
+    <div id="mainSection"></div>
+
+</body>
+
+</html>
+
+<script>
+    function Fetchdata() {
+        fetch("https://thecollective-backend.onrender.com/cart")
+            .then((res) => res.json())
+            .then((data) => {
+                CardList(data)
+                productdata = data
+            })
+            .catch((err) => console.log(err))
+    }
+    Fetchdata()
+
+    function CardList(data) {
+        const store = data.map((el) => Card(el.id, el.innerImageSrc, el.productName, el.productPrice, el.productBrand))
+        document.getElementById("mainSection").innerHTML = store.join("");
+    }
+
+
+
+    function Card(id, innerImageSrc, productName, productBrand, productPrice) {
+        let SingleCard = `
+    <a href="description.html?title=${encodeURIComponent(productName)}&image=${encodeURIComponent(innerImageSrc)}&brand=${encodeURIComponent(productBrand)}&price=${encodeURIComponent(productPrice)}" style="text-decoration:none; list-style:none">
+    <div class="card" data-id=${id}>
+    <div class="card-img">
+      <img src=${innerImageSrc} alt="">
+    </div>
+    <div class="card-body">
+      <h4 class="card-name">${productName}</h4>
+      <p class="card-brand">${productBrand}</p>
+      <p class="card-price">${productPrice}</p>
+      <button class="card-button" data-id=${id}>Delete</button>
+    </div>
+    </div>
+    </a>
+    `
+
+        return SingleCard
+    }
+
+    //### DELETE PART ###
+
+document.addEventListener("click",(e)=>{
+    if(e.target.classList.contains("card-button")){
+        DeleteProduct(e.target.dataset.id)
+    }
+})
+
+function DeleteProduct(id){
+    fetch(`https://thecollective-backend.onrender.com/cart/${id}`,{
+        method:"DELETE"
+    }).then((res)=>res.json())
+    .then((data)=>{
+        alert("deleted...")
+        console.log(data)
+    })
+    .catch((err)=>console.log(err))
+}
+</script>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC</title>
+
+    <!-- bootstrap css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap file -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- google font live icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- slider.js -->
+
+</head>
+<body>
+  <!-- header -->
+    <div class="container-fluid bg-light fixed-top">
+      <div class="row">
+        <div class="col-4">
+          <ul class="start d-flex">
+            <li class="store d-flex">
+              <i class="bi bi-cursor"></i>
+              <h6>Stores</h6>
+            </li>&nbsp;&nbsp;
+            <li class="telephone d-flex">
+              <i class="bi bi-telephone"></i>
+              <h6>9328-992-509</h6>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="col-4 pt-3    ">
+          <a href="index.html" id="home"><img src="https://imagescdn.thecollective.in/img/app/brands/tc/TC-Logo_D_0909.png?w=300"></a>
+        </div>
+    
+        <div class="col-4 bg-light">
+          <ul class="icons d-flex justify-content-end">
+            <li><i class="bi bi-search" id="search"></i></li>
+            <li><i class="bi bi-shop"></i></li>
+            <li><a href="login.html"><i class="bi bi-person-circle" style="color: black;"></i></a></li>
+            <li id="cart"><a href="cart.html"><i class="bi bi-handbag" style="color: black;"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><hr>
+ 
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top" id="navbar"> 
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" style="justify-content:center;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" id="new-arrivals" href="new_arrivals.html">New Arrivals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Men</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Women</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kids</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bags</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">shoes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gifts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: red;">Outlet</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- content -->
+  <div class="cotainer-fluid overflow-hidden">
+    <div class="row">
+          <!-- polo -->
+          <div class="col-12">
+            <img src="https://imagescdn.thecollective.in/uploads/micrositmedia/production/8199_-_SP24_Only_Polo_India_Microsite_Desktop_COLLECTIVE_BANNER_2732x1114px_V2_3732_1713867852948.jpg?w=1630" alt="" style="width: 100%;">
+            
+         </div> 
+       <!-- grand escape -->
+         <div class="col-12">
+           <video class="w-100" autoplay loop muted>
+             <source src="https://imagescdn.thecollective.in/uploads/micrositmedia/production/Couple_speedboat_desktop_4064_1714478581338.mp4"/>
+           </video>
+         </div>
+       <!-- ted baker -->
+       <div class="col-12">
+         <img src="https://imagescdn.thecollective.in/uploads/micrositmedia/production/TB_Get_Lost_in_Spring_WebBanner_Desktop_Opt2_861_1709633421418.jpg?w=1630" alt="" style="width: 100%;">
+     </div>
+     
+       <!-- fred perry -->
+       <div class="col-12">
+         <video class="w-100" autoplay loop muted>
+             <source src="https://imagescdn.thecollective.in/uploads/micrositmedia/production/THE_FP_Shirt_campaign_desktop_banner_WO_button_861_1713430025316.mp4" type="video/mp4" />
+          </video>
+     </div>
+ 
+     <!-- hackett -->
+     <div class="col-12">
+       <img src="https://imagescdn.thecollective.in/uploads/micrositmedia/production/HKT_Heritage_WebBanner_Desktop_861_1713338460055.gif?w=1630" alt="" style="width: 100%;">
+   </div>
+   <!-- tissot -->
+   <div class="col-12" id="tissot">
+    <img src="https://imagescdn.thecollective.in/uploads/micrositmedia/production/PR_516_Lifestyle_1448x587_3732_1713939031328.jpg?w=1630" alt="">
+   </div>
+   
+    </div>
+  </div>
+
+  <!-- slider 1 -->
+  <div class="container" id="slider" style="margin-top: -60px;">
+    <div class="slider">
+    <div class="slider-wrapper">
+      <button id="prev-slide" class="slide-button material-symbols-rounded">
+        chevron_left
+      </button>
+
+      <h2 style="text-align: center;">New In</h2>
+
+      <ul class="image-list">
+        <li id="slider-text">
+          <img src="https://imagescdn.thecollective.in/img/app/product/1/1003242-13466803.jpg?w=500&auto=format" class="image-item" alt="img-1">
+            <h5>Michael Kors</h5>
+            <h6>men-white-chequered-patch-mk-logo-t-shirt</h6>
+            <h6>12,000.00</h6>
+        </li>
+        <li id="slider-text">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/999484-13373508.jpg?w=500&auto=format" class="image-item" alt="img-2">
+          <h5>PS BY Paul Smith</h5>
+          <h6>men-white-ps-palm-tree-t-shirt</h6>
+          <h6>8,500.00</h6>
+        </li>
+        <li id="slider-text">
+          <img src="https://imagescdn.thecollective.in/img/app/product/1/1001432-13418691.jpg?w=500&auto=format" class="image-item" alt="img-3">
+          <h5>Plein Sport</h5>
+          <h6>men-white-back-metallic-tiger-print-polo</h6>
+          <h6>34,000.00</h6>
+        </li>
+        <li id="slider-text">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/999589-13378217.jpg?w=500&auto=format" class="image-item" alt="img-4">
+          <h5>Evisu</h5>
+          <h6>Men White Hanafuda Kamon Foil Print T-shirt</h6>
+          <h6>13,500.00</h6>
+        </li>
+        <li id="slider-text">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/999655-13382307.jpg?w=500&auto=format" class="image-item" alt="img-5">
+          <h5>Fred Perry</h5>
+          <h6>men-white-tipped-crew-neck-pique-t-shirt</h6>
+          <h6>12,500.00</h6>
+        </li>
+        <li id="slider-text">
+          <img src="https://imagescdn.thecollective.in/img/app/product/1/1000286-13392531.jpg?w=500&auto=format" class="image-item" alt="img-6">
+          <h5>Farah</h5>
+          <h6>Men White Solid Logo Shirt</h6>
+          <h6>9,500.00</h6>
+        </li>
+        <li id="slider-text">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/999465-13373238.jpg?w=500&auto=format" class="image-item" alt="img-7">
+          <h5>Karl Lagerfeld</h5>
+          <h6>men-white-kl-patch-shirt</h6>
+          <h6>30,000.00</h6>
+        </li>
+        <li id="slider-text">
+          <img src="https://imagescdn.thecollective.in/img/app/product/1/1001433-13418713.jpg?w=500&auto=format" class="image-item" alt="img-8">
+          <h5>Hugo</h5>
+          <h6>men-white-chequered-zipper-jacket</h6>
+          <h6>24,500.00</h6>
+        </li>
+        <li id="slider-text">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/999468-13373298.jpg?w=500&auto=format" class="image-item" alt="img-9">
+          <h5>Philipp Plain</h5>
+          <h6>men-white-clean-back-pp-logo-jeans</h6>
+          <h6>64000.00</h6>
+        </li>
+      </ul>
+      <button id="next-slide" class="slide-button material-symbols-rounded">
+        chevron_right
+      </button>
+    </div>
+
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+    </div>
+
+
+  </div>
+
+  <!-- slider 2 -->
+   <div class="container" id="sliders" style="margin-top: -10%;">
+    <div class="sliders">
+    <div class="slider-wrappers">
+      <button id="prev-slides" class="slide-buttons material-symbols-rounded">
+        chevron_left
+      </button>
+
+      <h2 style="text-align: center;">Trending Now</h2>
+
+      <ul class="image-lists">
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/962425-12507890.jpg?w=500&auto=format" class="image-item" alt="img-1">
+            <h5>Polo Ralph Lau</h5>
+            <h6>men-white-chequered-patch-mk-logo-t-shirt</h6>
+            <h6>12,000.00</h6>
+        </li>
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/988694-13108324.jpg?w=500&auto=format" class="image-item" alt="img-2">
+          <h5>PS BY Paul Smith</h5>
+          <h6>men-white-ps-palm-tree-t-shirt</h6>
+          <h6>8,500.00</h6>
+        </li>
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/976804-12853239.jpg?w=500&auto=format" class="image-item" alt="img-3">
+          <h5>Plein Sport</h5>
+          <h6>men-white-back-metallic-tiger-print-polo</h6>
+          <h6>34,000.00</h6>
+        </li>
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/976845-12853538.jpg?w=500&auto=format" class="image-item" alt="img-4">
+          <h5>Evisu</h5>
+          <h6>Men White Hanafuda Kamon Foil Print T-shirt</h6>
+          <h6>13,500.00</h6>
+        </li>
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/976808-12853267.jpg?w=500&auto=format" class="image-item" alt="img-5">
+          <h5>Fred Perry</h5>
+          <h6>men-white-tipped-crew-neck-pique-t-shirt</h6>
+          <h6>12,500.00</h6>
+        </li>
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/997534-13333501.jpg?w=500&auto=format" class="image-item" alt="img-6">
+          <h5>Farah</h5>
+          <h6>Men White Solid Logo Shirt</h6>
+          <h6>9,500.00</h6>
+        </li>
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/966714-12646138.jpg?w=500&auto=format" class="image-item" alt="img-7">
+          <h5>Karl Lagerfeld</h5>
+          <h6>men-white-kl-patch-shirt</h6>
+          <h6>30,000.00</h6>
+        </li>
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/966714-12646138.jpg?w=500&auto=format" class="image-item" alt="img-8">
+          <h5>Hugo</h5>
+          <h6>men-white-chequered-zipper-jacket</h6>
+          <h6>24,500.00</h6>
+        </li>
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/988699-13108362.jpg?w=500&auto=format" class="image-item" alt="img-9">
+          <h5>Philipp Plain</h5>
+          <h6>men-white-clean-back-pp-logo-jeans</h6>
+          <h6>64000.00</h6>
+        </li>
+        <li id="slider-texts">
+          <img src="https://imagescdn.thecollective.in/img/app/product/9/979735-12906976.jpg?w=500&auto=format" class="image-item" alt="img-10">
+          <h5>Philipp Plain</h5>
+          <h6>men-white-clean-back-pp-logo-jeans</h6>
+          <h6>64000.00</h6>
+        </li>
+      </ul>
+      <button id="next-slides" class="slide-buttons material-symbols-rounded">
+        chevron_right
+      </button>
+    </div>
+    <div class="slider-scrollbars">
+      <div class="scrollbar-tracks">
+        <div class="scrollbar-thumbs"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <Footer>
+    <div class="container-fluid bg-dark" style="color: aliceblue;">
+      <div class="row">
+       <div class="col-2">
+        <h5>Customer Support</h5>
+        <p>We are happy to help you<br> with your purchase</p>&nbsp;
+        <p>Call 1800-833-4488</p>
+       </div>
+       <div class="col-2">
+        <h5>About us</h5>
+        <p>
+          The Collective
+          Careers
+          Feedback
+        </p>
+       </div>
+       <div class="col-2">
+        <h5>Shoping online</h5>
+        <p>FAQs</p>
+        <p>Offers Terms & Conditions</p>
+        <p>Shipping Policy</p>
+        <p>Return / Exchange Policy</p>
+        <p>Site Map</p>
+        <p>Terms of Use</p>
+       </div>
+       <div class="col-2">
+        <h5>Customer Services</h5>
+        <p>Made To Measure</p>
+        <p>Privacy Policy</p>
+        <p>Gift Cards</p>
+        <p>Personal Shopping</p>
+        <p>Loyalty Terms & Conditions</p>
+      </div>
+       <div class="col-2">
+        <h5>Our Stores & Events</h5>
+        <p>Store Locator</p>
+        <p>Brand Directory</p>
+      </div>
+       <div class="col-2">
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-pinterest"></i>
+
+       </div>
+      </div>
+      
+    </div>
+  </Footer>
+</body>
+</html>
+
+
+<script>
+  const initSlider = () => {
+    const imageList = document.querySelector(".slider-wrapper .image-list");
+    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+    
+    // Handle scrollbar thumb drag
+    scrollbarThumb.addEventListener("mousedown", (e) => {
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft;
+        const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+        
+        // Update thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
+            // Ensure the scrollbar thumb stays within bounds
+            const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+            const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+            
+            scrollbarThumb.style.left = `${boundedPosition}px`;
+            imageList.scrollLeft = scrollPosition;
+        }
+        // Remove event listeners on mouse up
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+        }
+        // Add event listeners for drag interaction
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+    });
+    // Slide images according to the slide button clicks
+    slideButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.id === "prev-slide" ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * direction;
+            imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+    });
+     // Show or hide slide buttons based on scroll position
+    const handleSlideButtons = () => {
+        slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+        slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+    }
+    // Update scrollbar thumb position based on image scroll
+    const updateScrollThumbPosition = () => {
+        const scrollPosition = imageList.scrollLeft;
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+        scrollbarThumb.style.left = `${thumbPosition}px`;
+    }
+    // Call these two functions when image list scrolls
+    imageList.addEventListener("scroll", () => {
+        updateScrollThumbPosition();
+        handleSlideButtons();
+    });
+}
+window.addEventListener("resize", initSlider);
+window.addEventListener("load", initSlider);
+
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+function itSlider() {
+    const imageLists = document.querySelector(".slider-wrappers .image-lists");
+    const slideButtons = document.querySelectorAll(".slider-wrappers .slide-buttons");
+    const sliderScrollbar = document.querySelector(".container .slider-scrollbars");
+    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumbs");
+    const maxScrollLeft = imageLists.scrollWidth - imageLists.clientWidth;
+
+    // Handle scrollbar thumb drag
+    scrollbarThumb.addEventListener("mousedown", (e) => {
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft;
+        const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+
+        // Update thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
+            // Ensure the scrollbar thumb stays within bounds
+            const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+            const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+
+            scrollbarThumb.style.left = `${boundedPosition}px`;
+            imageLists.scrollLeft = scrollPosition;
+        };
+        // Remove event listeners on mouse up
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+        };
+        // Add event listeners for drag interaction
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+    });
+    // Slide images according to the slide button clicks
+    slideButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.id === "prev-slide" ? -1 : 1;
+            const scrollAmount = imageLists.clientWidth * direction;
+            imageLists.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+    });
+    // Show or hide slide buttons based on scroll position
+    const handleSlideButtons = () => {
+        slideButtons[0].style.display = imageLists.scrollLeft <= 0 ? "none" : "flex";
+        slideButtons[1].style.display = imageLists.scrollLeft >= maxScrollLeft ? "none" : "flex";
+    };
+    // Update scrollbar thumb position basesd on image scroll
+    const updateScrollThumbsPosition = () => {
+        const scrollPosition = imageLists.scrollLeft;
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+        scrollbarThumb.style.left = `${thumbPosition}px`;
+    };
+    // Call these two functions when image list scrolls
+    imageLists.addEventListener("scroll", () => {
+        updateScrollThumbsPosition();
+        handleSlideButtons();
+    });
+}
+window.addEventListener("resize", itSlider);
+window.addEventListener("load", itSlider);
+</script>

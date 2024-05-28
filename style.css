@@ -1,0 +1,285 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header */
+.start li{
+    padding-top: 15px;
+    font-size: 25px;
+    h6{
+        padding-top: 7px;
+    }
+}
+.icons li{
+    padding-right: 25px;
+    font-size: 25px;
+    padding-top: 15px;
+    margin-left: 0%;
+}
+/* navbar */
+.navbar{
+    margin-top: 60px;
+    font-size: 18px;
+    font-weight: 20px;
+}
+/* slider 1*/
+#slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.slider {
+    max-width: 1200px;
+    width: 95%;
+    align-items: center;
+  }
+.slider-wrapper {
+    position: relative;
+  }
+.slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover {
+    background: #404040;
+}
+.slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+}
+.slider-wrapper .slide-button#next-slide {
+    right: -25px;
+}
+.slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+.slider-wrapper .image-list .image-item {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+}
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+}
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+}
+.slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+        display: none !important;
+    }
+
+    .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+}
+#slider-text{
+    text-align: center;
+    border: 1px solid gainsboro;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* slider 2*/
+#sliders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.sliders {
+    max-width: 1200px;
+    width: 95%;
+    align-items: center;
+  }
+.slider-wrappers {
+    position: relative;
+  }
+.slider-wrappers .slide-buttons {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slider-wrappers .slide-buttons:hover {
+    background: #404040;
+}
+.slider-wrappers .slide-buttons#prev-slides {
+    left: -25px;
+    display: none;
+}
+.slider-wrappers .slide-buttons#next-slides {
+    right: -25px;
+}
+.slider-wrappers .image-lists {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.slider-wrappers .image-lists::-webkit-scrollbar {
+    display: none;
+}
+.slider-wrappers .image-lists .image-item {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.container .slider-scrollbars {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slider-scrollbars .scrollbar-tracks {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+}
+.slider-scrollbars:hover .scrollbar-tracks {
+    height: 4px;
+}
+.slider-scrollbars .scrollbar-thumbs {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+}
+.slider-scrollbars .scrollbar-thumbs:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+.slider-scrollbars .scrollbar-thumbs::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-buttons {
+        display: none !important;
+    }
+
+    .slider-wrapper .image-lists {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-wrapper .image-lists .image-item {
+        width: 280px;
+        height: 380px;
+    }
+    .slider-scrollbars .scrollbar-thumbs {
+        width: 20%;
+    }
+}
+#slider-texts{
+    text-align: center;
+    border: 1px solid gainsboro;
+}

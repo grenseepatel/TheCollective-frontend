@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+} 
+/* header */
+.start li{
+    padding-top: 15px;
+    font-size: 25px;
+    h6{
+        padding-top: 7px;
+    }
+}
+.icons li{
+    padding-right: 25px;
+    font-size: 25px;
+    padding-top: 15px;
+    margin-left: 0%;
+} 
+
+/* navbar */
+.navbar{
+    margin-top: 60px;
+    font-size: 18px;
+    font-weight: 20px;
+}
+
+/* new arrivals */
+#new{
+    color: black;
+}
+#sortBy{
+    text-align: end;
+}
+
+/* panel */
+.head{
+    border-bottom: solid gray;
+}
+#sidebar{
+    display: flex;
+    margin-top: 200px;
+}
+.left{
+    overflow: scroll;
+    padding: 10px;
+    text-align: justify;
+    margin-left: 6%;
+    width: 280px;
+    height: 100%;
+    background-color: whitesmoke;
+    position: sticky;
+    /* top: 350px; */
+    margin-top: 200px;
+    z-index: 1;
+}
+
+.toggleLink{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+}
+.toggleLink:hover{
+    color: black;
+    font-weight: bold;
+}
+.section{
+    display: flex;
+    p{
+        padding: 12px 0px 0px 5px;
+    }
+}
+
+
+.right{
+    width: 80%;
+    vertical-align: top;
+    margin-left: 35%;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+}
+.card{
+    border: 1px solid navy;
+       height: 380px;
+       width: 230px;
+       /* padding: 3% 25px; */
+       text-align: center;   
+        margin: 2PX;
+        
+       img{
+        height: 200px;
+        width: 200px;
+}
+}
+.card-name
+{
+    font-size: 15px;
+    color: black;
+}
+.card-brand{
+    color: black;
+}
+.card-price{
+    color: black;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+.card-list{
+    
+    text-decoration: none;
+    color: black;
+}

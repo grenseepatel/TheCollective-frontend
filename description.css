@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header */
+.start li{
+    padding-top: 15px;
+    font-size: 25px;
+    h6{
+        padding-top: 7px;
+    }
+}
+.icons li{
+    padding-right: 25px;
+    font-size: 25px;
+    padding-top: 15px;
+    margin-left: 0%;
+}
+
+/* navbar */
+.navbar{
+    margin-top: 60px;
+}

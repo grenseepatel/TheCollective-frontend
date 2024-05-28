@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- bootstrap css file -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- bootstrap file -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     <!-- bootstap icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="description.css">
+     <script src="description.js"></script>
+
+     <style>
+      *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      #descr{
+        margin-top: 10%;
+        border: 1px solid gray;
+      }
+      .img{
+        height: 500px;
+        width: 500px;
+      }
+      .bag button{
+        height: 40px;
+        width: 80%;
+        
+      }
+     </style>
+</head>
+<body>
+      <!-- header -->
+      <div class="container-fluid fixed-top " style="color: white; background-color: darkgray;">
+        <div class="row">
+          <div class="col-4">
+            <ul class="start d-flex">
+              <li class="store d-flex">
+                <i class="bi bi-cursor"></i>
+                <h6>Stores</h6>
+              </li>&nbsp;&nbsp;
+              <li class="telephone d-flex">
+                <i class="bi bi-telephone"></i>
+                <h6>9328-992-509</h6>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="col-4 pt-3">
+            <img src="https://imagescdn.thecollective.in/img/app/brands/tc/TC-Logo_D_0909.png?w=300" alt="">
+          </div>
+      
+          <div class="col-4">
+            <ul class="icons d-flex justify-content-end">
+              <li><i class="bi bi-search"></i></li>
+              <li><i class="bi bi-shop"></i></li>
+              <li><a href="login.html"><i class="bi bi-person-circle" style="color: white;"></i></a></li>
+            <li id="cart"><a href="cart.html"><i class="bi bi-handbag" style="color: white;"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">New Arrivals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bags</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">shoes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gifts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: red;">Outlet</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id="descr">
+        <div class="row" id="fullCard">
+            <div class="col-6">
+                <img id="image" class="img" src="https://imagescdn.thecollective.in/img/app/product/9/996345-13284030.jpg?w=900&auto=format" alt="" srcset="">
+            </div>
+            <div class="col-6">
+              <h3 id="title">Fred Perry</h3>
+              <h6 id="brand">Men-Orange-Fine-Striped-Cardigan</h6>
+              <p id="price">₹27,500.00</p>
+              <p>(Inclusive of all taxes)</p>
+              <br>
+              <p>Select Size</p>
+              <h5>FIND THE PERFECT SIZE NOW!</h5>
+              <div class="button">
+                <button class="btn btn-light">S</button>
+                <button class="btn btn-light">M</button>
+                <button class="btn btn-light">L</button>
+                <button class="btn btn-light">XL</button>
+              </div><br>
+              <div class="bag">
+                <button id="card-buy" class="btn btn-dark">Buy Now</button><br><br>
+                <button id="AddToCart" class="btn btn-light">Add to Cart </button>
+              </div><br>
+              <p>Delivery Details</p>
+              <p>Enter Pincode for Delivery Date</p>
+              <p> All India FREE shipping</p>
+              <p> 15 days returns / exchange available</p>
+              <p> Return at store available</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    const a=new URLSearchParams(window.location.search)
+    window.addEventListener("load",()=>{
+      document.getElementById("image").src=a.get("image")
+    document.getElementById("title").innerText=a.get("title")
+    document.getElementById("price").innerText=a.get("price")
+    document.getElementById("brand").innerText=a.get("brand")
+    })
+    // ### DATA POST TO THE CART PAGE ###
+    AddToCart.addEventListener("click",()=>{
+      let cartdata={
+        productName:a.get("title"),
+        innerImageSrc:a.get("image"),
+        productPrice:a.get("price"),
+        productBrand:a.get("brand"),
+        } 
+        fetch("https://thecollective-backend.onrender.com/cart",{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify(cartdata)
+        }).then((res)=>res.json())
+        .then((data)=>alert("Data added to cart"))
+        .catch((err)=>console.log(err))
+    })
+</script>
+
+
+
+
+<!-- 
+
+
+//### DATA POST TO THE CART PAGE ###
+AddToCart.addEventListener("click",()=>{
+  let cartdata={
+            productName:a.get("productName"),
+            innerImageSrc:a.get("innerImageSrc"),
+            productPrice:a.get("productPrice"),
+            productBrand:a.get("productBrand"),
+        }
+        fetch("http://localhost:3000/cart",{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify(cartdata)
+        }).then((res)=>res.json())
+        .then((data)=>alert("Data added to cart"))
+        .catch((err)=>console.log(err))
+    }) -->
